@@ -1,0 +1,24 @@
+.ballons-group {
+    position: absolute;
+    right: 0;
+    overflow-x: clip;
+}
+
+.ballons-group .cloud {
+    position: absolute;
+    top: -5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 26.05rem;
+}
+
+.ballons-group .ballon:nth-of-type(even) {
+    position: relative;
+    z-index: 1;
+    max-width: 5.9rem;
+}
+
+.ballons-group img.ballon:nth-of-type(odd) {
+    width: 9.3rem;
+}

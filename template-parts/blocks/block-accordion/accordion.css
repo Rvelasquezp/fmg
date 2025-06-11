@@ -1,0 +1,74 @@
+.accordion-container {
+	position: relative;
+}
+.accordionWrap .accordion {
+	background-color: #20255e;
+	color: #fff;
+	padding: 2em 2em 2.5em;
+	overflow: hidden;
+}
+.accordionWrap .accordion h2 {
+	color: #fff;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+button.accordionButton {
+	background: #20255e;
+	border: none;
+	border-radius: 50%;
+	width: 5.3855em;
+	height: 5.3855em;
+	padding: 0;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s all ease-in-out;
+}
+
+button.accordionButton.active,
+button.accordionButton:hover {
+	background: #f0c3dc;
+}
+
+button.accordionButton svg {
+	width: 2.55em;
+	height: 2.55em;
+}
+
+.accordionMenu {
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 1em;
+	width: 100%;
+}
+
+.accordionWrap {
+	padding-top: 1em;
+}
+
+@media screen and (min-width: 960px) {
+	.accordionWrap .accordion {
+		padding: 10.5em 6.75em 4em;
+	}
+	.accordionMenu {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		gap: 1em 8em;
+		padding-top: 0;
+	}
+	.accordionWrap {
+		padding-top: 6.19275em;
+	}
+	button.accordionButton {
+		width: 12.3855em;
+		height: 12.3855em;
+	}
+	button.accordionButton svg {
+		width: 5.55em;
+		height: 5.55em;
+	}
+}

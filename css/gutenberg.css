@@ -1,0 +1,114 @@
+.wp-block {
+	max-width: none;
+	transition: 0.2s all ease-in-out;
+}
+
+.wp-block.is-selected {
+	background-color: #e0e0e0;
+	padding: 8px;
+}
+
+.filterActivities {
+    display: grid;
+}
+
+section.default-hero {
+	position: relative !important;
+	width: 100% !important;
+	    z-index: 1 !important;
+    top: 0 !important;
+}
+
+body .heroSection .content > * {
+	opacity: 1;
+	transform: none;
+}
+
+ul.wp-block.is-selected,
+ol.wp-block.is-selected {
+	padding: 8px 8px 8px 48px;
+}
+
+.allEventInfo figure {
+	display: block !important;
+}
+
+.allEventInfo figure * {
+	width: 100% !important;
+}
+
+.defaultHero {
+	display: block !important;
+}
+
+section.title-collapse .titleCollapse {
+	display: block;
+}
+
+section.title-collapse .titleCollapse > div > div {
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+
+section.columns-container.is-style-wide .columnsGrid {
+	display: block;
+}
+
+section.columns-container.is-style-wide .columnsGrid > div > div {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5em;
+	color: #fff;
+}
+
+section.columns-container.is-style-wide .columnsGrid > div > div {
+	grid-template-columns: 1fr 1fr;
+}
+
+section.columns-container .columnsGrid {
+	display: block !important;
+}
+
+section.columns-container .columnsGrid > div > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.defaultHero > div > div.block-editor-block-list__layout > .wp-block-group > .wp-block-group__inner-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+	color: #dd2668;
+}
+
+@media only screen and (min-width: 760px) {
+	.defaultHero > div > div.block-editor-block-list__layout > .wp-block-group > .wp-block-group__inner-container {
+		flex-direction: row;
+	}
+
+	.acf-block-preview .image-gallery .gallery-container {
+		display: block;
+	}
+
+	.image-gallery .gallery-container > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1em;
+		grid-auto-rows: 30em;
+	}
+}
+
+.acf-block-preview .single-activity-content .content .wrapper-activity {
+	display: block;
+}
+
+.single-activity-content .content .wrapper-activity > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: grid;
+    grid-template-columns: 54.07956844234659% 33.17599460552933%;
+    justify-content: space-between;
+}

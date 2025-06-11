@@ -1,0 +1,249 @@
+section.container {
+	/* padding: 5rem 0; */
+	position: relative;
+}
+
+/* section.container.reduced_padding {
+	padding: 3rem 0 2rem;
+} */
+
+.style-nuage {
+	pointer-events: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translate(-15%, 25%);
+}
+
+.style-nuage-2 {
+	pointer-events: none;
+	z-index: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateY(50%);
+}
+
+.style-nuage img {
+	width: 40vw;
+	max-width: 497px;
+}
+
+.style-nuage-2 img {
+	width: 23vw;
+	max-width: 314px;
+}
+
+section.container .wrap {
+	margin: 0 0.944444444444444em;
+	padding: 0;
+	position: relative;
+}
+
+section.container .leftCloudTop svg {
+	position: absolute;
+	left: 0;
+	width: 18.35em;
+	display: none;
+}
+
+section.container .leftCloudBottom svg {
+	position: absolute;
+	left: 5em;
+	/* bottom: -2em; */
+	top: 9em;
+	width: 15.7em;
+	display: none;
+}
+
+section.container .rightCloud svg {
+	position: absolute;
+	right: 0;
+	/* top: 0; */
+	width: 18.65em;
+	z-index: -2;
+	display: none;
+}
+
+section.container .leftCharacter svg {
+	position: absolute;
+	width: 13.95em;
+	left: 1.75em;
+	display: none;
+}
+
+section.container .rightParachute svg {
+	position: absolute;
+	right: 4.75em;
+	top: -2.5em;
+	z-index: -1;
+	display: none;
+}
+
+.container p {
+	line-height: 1.5;
+}
+
+section.container .bigBallon svg {
+	width: 11.65em;
+	position: absolute;
+	top: -4.75em;
+	left: 5.05em;
+	display: none;
+}
+
+section.container .mediumBallon svg {
+	width: 6.3em;
+	position: absolute;
+	top: 15em;
+	left: 7.85em;
+	display: none;
+}
+
+section.container .smallBallon svg {
+	width: 3.65em;
+	position: absolute;
+	top: 13.75em;
+	left: 12em;
+	display: none;
+}
+
+section.container.style-4 .smallBallon svg {
+	width: unset;
+	/* bottom: -3em; */
+	top: 18em;
+	left: unset;
+	right: 3em;
+}
+
+section.container.style-5 .smallBallon svg {
+	width: unset;
+	top: 4.75em;
+	left: unset;
+	right: 4.5em;
+	transform: scaleX(-1);
+}
+
+section.container.style-4 .bigBallon svg {
+	width: unset;
+	top: 5em;
+	left: unset;
+	right: 7.8em;
+}
+
+section.container.style-5 .bigBallon svg {
+	width: unset;
+	top: 12em;
+	left: unset;
+	right: 8.1em;
+}
+
+section.container .cloudTop svg {
+	width: 26em;
+	position: absolute;
+	top: -12.9em;
+	left: 0;
+	z-index: -1;
+	display: none;
+}
+
+section.container .cloudBottom svg {
+	width: 18.2em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+section.container.style-4 .cloudBottom svg,
+section.container.style-5 .cloudBottom svg {
+	width: unset;
+	top: unset;
+	left: unset;
+	right: 0;
+	bottom: 1em;
+	transform: scaleX(-1);
+}
+
+section.container .contactCloud svg {
+	position: absolute;
+	right: 0;
+	/* bottom: 0; */
+	z-index: 1;
+	width: 22.95em;
+	display: none;
+}
+
+section.container .contactBallon svg {
+	position: absolute;
+	right: -2em;
+	/* bottom: -5.5em; */
+	width: 15.6em;
+	display: none;
+}
+
+.container Strong {
+	color: #20255e;
+}
+
+.container h3 {
+	font-size: 2em;
+}
+
+@media only screen and (min-width: 760px) {
+	section.container .rightCloud svg,
+	section.container .rightParachute svg,
+	section.container .contactBallon svg,
+	section.container .contactCloud svg {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.container .wrap {
+		margin-left: 7.9em;
+		margin-right: 7.65em;
+	}
+	section.container.is-style-wide .wrap {
+		margin-left: 7.9em;
+		margin-right: 7.65em;
+	}
+
+	.style-nuage img {
+		width: 25.885416666666667vw;
+		max-width: 497px;
+	}
+
+	.style-nuage-2 img {
+		width: 16.354166666666667vw;
+		max-width: 314px;
+	}
+
+	section.container.is-style-small .wrap {
+		margin-left: 28.35218855592483%;
+		margin-right: 20.47349819400443%;
+	}
+
+	section.container .leftCharacter svg,
+	section.container .leftCloudTop svg,
+	section.container .leftCloudBottom svg,
+	section.container .bigBallon svg,
+	section.container .mediumBallon svg,
+	section.container .smallBallon svg,
+	section.container .cloudTop svg,
+	section.container .cloudBottom svg {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section.container .wrap {
+		margin-left: 11.9em;
+		margin-right: 18.65em;
+	}
+
+	section.container.is-style-wide .wrap {
+		margin-left: 11.75em;
+		margin-right: 11.75em;
+	}
+}

@@ -1,0 +1,126 @@
+.swiper-activities-family .image:hover img {
+	transform: scale(1.15);
+}
+
+.swiper-activities-family .swiper-slide {
+	overflow: hidden;
+}
+
+section.activities-family-slider .wrap {
+	margin: 0 calc(2.5em - 30px) 0 calc(2.5em - 30px);
+	position: relative;
+	padding: 0;
+}
+
+/* section.activities-family-slider {
+    margin: 4.55em 0;
+} */
+
+.activitiesFamilySlide .image img {
+	width: 100%;
+}
+
+/* .related-programs { */
+/* max-width: calc(100vw - 5.05em); */
+/* height: 23.95em; */
+/* } */
+
+.activitiesFamilySlide .swiper-button-next:after,
+.activitiesFamilySlide .swiper-button-prev:after {
+	content: none !important;
+}
+
+.activitiesFamilySlide .swiper-button-next,
+.activitiesFamilySlide .swiper-button-prev {
+	/* font-size: 2.96em; */
+	display: none;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	transition: 0.2s all ease-in-out;
+}
+
+.activitiesFamilySlide .swiper-button-next:hover,
+.activitiesFamilySlide .swiper-button-prev:hover {
+	background: #20255e;
+}
+
+.activitiesFamilySlide .swiper-button-next .arrow,
+.activitiesFamilySlide .swiper-button-prev .arrow {
+	transition: 0.2s all ease-in-out;
+}
+.activitiesFamilySlide .swiper-button-next:hover .arrow,
+.activitiesFamilySlide .swiper-button-prev:hover .arrow {
+	fill: #fff;
+}
+
+.activitiesFamilySlide .swiper-button-prev {
+	left: auto !important;
+	right: 3.85em !important;
+	bottom: 0 !important;
+}
+
+.activitiesFamilySlide .swiper-button-next {
+	right: 0;
+	bottom: 0 !important;
+}
+
+.activitiesFamilySlide .swiper-button-next i::before,
+.activitiesFamilySlide .swiper-button-prev i::before {
+	color: #f0c3dc;
+	font-weight: 300;
+}
+
+.activitiesFamilySlide .titleArrows {
+	position: relative;
+	margin-bottom: 3.5em;
+}
+
+.activitiesFamilySlide .titleArrows .title h2 {
+	/* font-size: 3em; */
+	/* font-weight: 800; */
+	color: #f0c3dc;
+	/* line-height: 1; */
+	margin: 0;
+}
+
+/* .swiper-activities-family .swiper-slide {
+    margin: 0 1.15em;
+} */
+
+/* .swiper-wrapper2 {
+    padding-left: 15em;
+} */
+
+.swiper-activities-family .image,
+.swiper-activities-family .image img {
+	height: 100%;
+}
+
+.swiper-activities-family .image img {
+	width: 100%;
+	vertical-align: middle;
+	object-fit: cover;
+	transition: 0.2s all ease-in-out;
+	aspect-ratio: 1/1;
+	object-position: top;
+}
+
+@media only screen and (min-width: 760px) {
+	.activitiesFamilySlide .swiper-button-next,
+	.activitiesFamilySlide .swiper-button-prev {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.activities-family-slider .wrap {
+		margin: 0 4.5em 0 7.85em;
+	}
+}
+
+@media (min-width: 1200px) {
+	section.activities-family-slider .wrap {
+		margin: 0 4.5em 0 10.85em;
+	}
+}

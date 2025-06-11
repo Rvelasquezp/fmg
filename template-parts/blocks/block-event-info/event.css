@@ -1,0 +1,155 @@
+section.event-info .wrap {
+	margin-left: 5.208333333333333%;
+	margin-right: 5.208333333333333%;
+	position: relative;
+	padding: 0;
+}
+
+.allEventInfo h2 {
+	font-size: 3em;
+	max-width: 14.08333333333333em;
+	line-height: 1;
+	font-weight: 800;
+	color: #20255e;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.eventInfoGrid > div {
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 3.4em;
+}
+
+.eventInfoGrid .image figure {
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+	max-height: 32.411em;
+}
+
+.eventInfoGrid .image {
+	position: relative;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section.event-info {
+	/* padding: 3em 0; */
+	margin-bottom: 0;
+}
+
+.eventInfoGrid .contentInfo p {
+	font-size: 1em;
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+.eventInfoGrid .contentInfo .button {
+	margin-top: 3.111111em;
+}
+
+.eventInfoGrid .contentInfo .button a {
+	font-size: 0.9em;
+	text-decoration: none;
+	background: #20255e;
+	color: #fff;
+	padding: 1.111111111111111em 3.611111111111111em;
+	border-radius: 1.666666666666667em;
+}
+
+.eventInfoGrid .image figure img {
+	width: 100%;
+	height: 100%;
+	max-height: inherit;
+	object-fit: cover;
+}
+
+.eventInfoGrid > div .header {
+	grid-area: header;
+}
+
+.eventInfoGrid > div .contentInfo {
+	grid-area: info;
+}
+
+@media only screen and (max-width: 960px) {
+	.eventInfoGrid > div .image {
+		grid-area: image;
+		margin-bottom: 2em;
+	}
+
+	.eventInfoGrid > div {
+		grid-template-columns: 1fr 64.44444444444444%;
+		column-gap: 2.4em;
+		grid-template-areas:
+			"image image"
+			"header header"
+			"info info";
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.allEventInfo h2 {
+		font-size: 1.7em;
+		line-height: 1.166666666666667;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.event-info {
+		background: #f0f2f5;
+		/* padding: 5em 0; */
+	}
+
+	section.event-info .wrap {
+		margin-left: 13.02913688840022%;
+		margin-right: 5.112699285321605%;
+	}
+
+	.eventInfoGrid .image figure {
+		/* position: absolute; */
+		margin-bottom: -12.4em;
+	}
+
+	.eventInfoGrid > div {
+		grid-template-columns: 1fr 64.44444444444444%;
+		column-gap: 2.4em;
+		grid-template-areas:
+			"header header"
+			"info .";
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section.event-info {
+		margin-bottom: 5em;
+	}
+
+	.eventInfoGrid > div {
+		column-gap: 3.4em;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.eventInfoGrid > div {
+		column-gap: 7.4em;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	section.event-info {
+		margin-bottom: 7em;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	section.event-info {
+		margin-bottom: 7em;
+	}
+
+	.eventInfoGrid > div {
+		column-gap: 8.4em;
+	}
+}

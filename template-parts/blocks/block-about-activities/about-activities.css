@@ -1,0 +1,190 @@
+section.about-activities .wrap {
+	margin-left: 5.208333333333333%;
+	margin-right: 5.208333333333333%;
+	padding: 0;
+	position: relative;
+}
+
+.contentActivities h2 {
+	font-size: 3em;
+	font-weight: 800;
+	color: #f0c3dc;
+	line-height: 1;
+	margin: 0 0 0.5em;
+}
+
+.contentActivities p {
+	font-size: 1em;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+.contentActivities a {
+	font-size: 0.9em;
+	text-decoration: none;
+	background: #f0c3dc;
+	color: #fff;
+	padding: 1.111111111111111em 3.611111111111111em;
+	border-radius: 1.666666666666667em;
+}
+
+.contentActivities .button {
+	margin-top: 3.111111em;
+}
+
+.contentActivities {
+	position: relative;
+	max-width: 45.25em;
+	margin-left: 0;
+}
+
+section.about-activities {
+	position: relative;
+	padding: 5.5em 0;
+}
+
+section.about-activities .leftCloudTop svg {
+	position: absolute;
+	left: 0;
+	width: 18.35em;
+	display: none;
+}
+
+section.about-activities .leftCloudBottom svg {
+	position: absolute;
+	left: 5em;
+	/* bottom: -2em; */
+	top: 9em;
+	width: 15.7em;
+	display: none;
+}
+
+section.about-activities .rightCloud svg {
+	position: absolute;
+	right: 0;
+	/* top: 0; */
+	width: 18.65em;
+	z-index: -2;
+	display: none;
+}
+
+section.about-activities .leftCharacter svg {
+	position: absolute;
+	width: 13.95em;
+	left: -3em;
+	display: none;
+}
+
+section.about-activities .rightParachute svg {
+	position: absolute;
+	right: 0;
+	top: -2.5em;
+	z-index: -1;
+	display: none;
+}
+
+/* .rightCloud {
+  animation-name: rightCloud;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rightCloud {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rightParachute {
+  animation-name: rightParachute;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rightParachute {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.leftCloudTop {
+  animation-name: leftCloudTop;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftCloudTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.leftCloudBottom {
+  animation-name: leftCloudBottom;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leftCloudBottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+@media only screen and (min-width: 760px) {
+	section.about-activities .rightCloud svg,
+	section.about-activities .rightParachute svg {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.about-activities .leftCharacter svg,
+	section.about-activities .leftCloudTop svg,
+	section.about-activities .leftCloudBottom svg {
+		display: block;
+	}
+
+	section.about-activities .wrap {
+		margin-left: 5.208333333333333%;
+		margin-right: 10.41666666666667%;
+	}
+
+	.contentActivities {
+		margin-left: 12.5em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.contentActivities {
+		margin-left: 20.5em;
+	}
+}

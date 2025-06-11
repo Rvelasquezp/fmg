@@ -1,0 +1,59 @@
+section.about-event .wrapBackground {
+	margin-left: 0%;
+	margin-right: 0%;
+	background: #f0c3dc;
+}
+
+section.about-event .wrap {
+	margin-left: 8.395061728395062%;
+	margin-right: 8.395061728395062%;
+	padding: 0;
+}
+
+.aboutEvent {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 2.25em 0 4.5em;
+}
+
+.aboutEvent h3 {
+	font-size: 1.5em;
+	font-weight: 800;
+	color: #fdd321;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.aboutEvent p {
+	font-size: 1em;
+	color: #fff;
+}
+
+.aboutEvent .location p:last-of-type {
+	margin-bottom: 0;
+}
+
+.aboutEvent .officeInfo p:last-of-type {
+	margin-bottom: 0;
+}
+
+.aboutEvent .officeInfo {
+	margin-top: 2em;
+}
+
+@media only screen and (min-width: 760px) {
+	.aboutEvent {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.aboutEvent .officeInfo {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.about-event .wrapBackground {
+		margin-left: 5.208333333333333%;
+		margin-right: 10.41666666666667%;
+	}
+}

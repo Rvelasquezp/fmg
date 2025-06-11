@@ -1,0 +1,99 @@
+section.hebergements {
+	margin-left: 1em;
+	/* margin-bottom: 5.9em; */
+}
+
+.eachHebergement {
+	padding: 2.75em 2em 2.75em 2em;
+	/* gap: 4em;
+	display: grid;
+	grid-template-columns: auto 1fr; */
+}
+
+a.hebergementImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.eachHebergement:nth-child(even),
+.eachHebergement:nth-child(odd) .hebergementImage {
+	background: #f0f2f5;
+}
+
+.hebergementImage {
+	width: 100%;
+	/* height: 19.56em; */
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	padding: 1em;
+}
+
+.hebergementContent h2 {
+	font-size: 1.5em;
+	margin-bottom: 1.333333333333333em;
+}
+
+.hebergementContent .innerContent {
+	color: #4e5157;
+}
+
+.hebergementContent .wp-block-button .wp-block-button__link {
+	min-width: 14.055555555555556em;
+}
+
+@media (min-width: 600px) {
+
+	.hebergementImage {
+		width: 19.56em;
+		height: 19.56em;
+	}
+
+	.eachHebergement {
+		padding: 2.75em 4.9em 2.75em 3em;
+	}
+	
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+
+	.hebergementContent {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 960px) {
+
+	.hebergementImage {
+		margin: 0 auto 2em;
+	}
+}
+
+@media (min-width: 960px) {
+
+	section.hebergements {
+		margin-left: 5em;
+		margin-bottom: 5.9em;
+	}
+
+	.eachHebergement {
+		gap: 4em;
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.eachHebergement {
+		padding: 2.75em 4.9em 2.75em 6.9em;
+		gap: 7.95em;
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+	
+}

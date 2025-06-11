@@ -1,0 +1,145 @@
+section.person-list .wrap {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.person-list-item-content h3 {
+	color: #20255e;
+	font-weight: 900;
+	margin-top: 0;
+	line-height: 1;
+	margin-bottom: 0.2rem;
+	transition: padding 0.3s ease-in-out;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.person-list-item-content p {
+	color: #454545;
+	font-weight: 700;
+	margin: 0;
+	transition: padding 0.3s ease-in-out;
+}
+
+.person-list-item {
+	padding: 0 2rem 0 2rem;
+}
+
+/* V1 */
+.person-list-v1 .person-list-item {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.person-list-wrapper.person-list-v1 {
+	gap: 1.9em;
+	display: grid;
+	margin-top: 1.9em;
+}
+
+.person-list-v1 .person-list-item {
+	background-color: #f0f2f5;
+}
+
+.person-list-v1 .person-list-item a {
+	opacity: 0;
+	transform: scale(0.5);
+	transition: all 0.4s ease-in-out;
+}
+
+.person-list-v1 .person-list-item:hover a {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* .person-list-v1 .person-list-item-content h3:hover {
+    padding-left: 0.5rem;
+} */
+
+/* .person-list-v1 .person-list-item-content p:hover {
+    padding-left: 0.5rem;
+} */
+
+.person-list-item .btn {
+	font-size: 0.9em;
+	background: #f0c3dc;
+	color: #fff;
+	padding: 1.0924em 3.888888888888889em;
+	border-radius: 1.666666666666667em;
+	align-self: center;
+	text-decoration: none;
+	text-align: center;
+	max-width: 12.65em;
+}
+
+.person-list-v1 .person-list-item-content {
+	display: grid;
+}
+
+.person-list-v1 .person-img {
+	position: relative;
+	overflow: hidden;
+	margin-top: -1rem;
+	width: 8.6rem;
+	height: 8.6rem;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.person-list-v1 .person-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.person-list-v1 .person-img img {
+	/* width: 100%;
+	height: 100%; */
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+.person-list-v1 .person-img:hover img {
+	transform: scale(1.1);
+}
+
+.person-list-item .contne {
+	padding: 2rem 0;
+}
+
+@media screen and (max-width: 960px) {
+	section.person-list .wrap {
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.person-list-item {
+		padding: 0 11.75rem 0 7rem;
+	}
+	.person-list-item .contne {
+		padding: 2rem 0;
+	}
+	.person-list-v1 .person-img {
+		width: 6.6rem;
+		height: 6.6rem;
+	}
+	/* V1 */
+	.person-list-v1 .person-list-item {
+		grid-template-columns: 81.1851851852% auto;
+		gap: unset;
+	}
+	.person-list-v1 .person-list-item-content {
+		gap: 2.4em;
+		padding-right: 3rem;
+		grid-template-columns: auto 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.person-list-v1 .person-img {
+		width: 7.6rem;
+		height: 7.6rem;
+	}
+}

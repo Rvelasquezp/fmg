@@ -1,0 +1,25 @@
+section.title-text .wrap {
+	margin-left: 5.208333333333333%;
+	margin-right: 5.208333333333333%;
+	padding: 0;
+}
+
+section.title-text {
+	padding: 3.5em 0 4em;
+}
+
+section.title-text .titleText h2 {
+	font-size: 3em;
+	font-weight: 800;
+	line-height: 1;
+	color: #f0c3dc;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 960px) {
+	section.title-text .wrap {
+		margin-left: 12.34375%;
+		margin-right: 24.47916666666667%;
+	}
+}

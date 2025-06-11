@@ -1,0 +1,44 @@
+button.popup-btn {
+	padding: 1.0924em 3.888888888888889em;
+	border-radius: 1.666666666666667em;
+	margin-top: 0;
+	transition: 0.2s all ease-in-out;
+	color: #fff;
+	border: none;
+	font-size: 0.9em;
+}
+
+button.popup-btn:hover {
+	background-color: #f0c3dc !important;
+}
+
+.popup-btn_wrapper.center {
+	text-align: center;
+}
+
+.popup-btn_wrapper.left {
+	text-align: left;
+}
+
+.popup-btn_wrapper.right {
+	text-align: right;
+}
+
+.entry-content .attachment:after {
+	content: "Joindre votre curriculum vitae";
+	background-color: #f0c3dc;
+	width: calc(100% - 4em);
+	position: absolute;
+	right: 0;
+	top: 9px;
+}
+
+.entry-content .attachment {
+	position: relative;
+}
+
+.entry-content .attachment input {
+	position: relative;
+	z-index: 0;
+	background: #f0c3dc;
+}

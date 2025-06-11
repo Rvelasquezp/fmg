@@ -1,0 +1,117 @@
+section.default-hero .wrap {
+	padding: 0;
+	margin: 0 0.944444444444444em;
+}
+
+section.default-hero,
+section.default-hero .background {
+	// position: fixed;
+	width: 100vw;
+	top: 0;
+	// z-index: -1;
+}
+
+.admin-bar section.default-hero {
+	top: 32px;
+}
+
+section.default-hero .background {
+	padding: 7.5em 0 2em;
+	background-image: url(/wp-content/themes/utopian/template-parts/blocks/block-default-hero/FMG_Background_Web-Banner-02.png);
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+section.default-hero h1 {
+	font-size: 1em;
+	margin-top: 3em;
+	margin-bottom: 0;
+	font-weight: 500;
+	padding-bottom: 0.5em;
+}
+
+.defaultHero > .wp-block-group > .wp-block-group__inner-container {
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: left;
+	color: #fff;
+}
+
+.defaultHero .title .h2 {
+	font-size: 2em;
+	font-weight: 800;
+	margin: 0 0 0.4em;
+	line-height: 1;
+	color: #fff;
+}
+
+.defaultHero .rightInfo p {
+	font-size: 1.25em;
+	margin: 0 0 0.56em;
+	line-height: 1;
+}
+
+.defaultHero .rightInfo p.date {
+	font-weight: 800;
+}
+
+.defaultHero .rightInfo {
+	position: relative;
+	padding-left: 0;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.defaultHero .rightInfo::before {
+	content: "";
+	width: 7.173888888888889em;
+	height: 0.1em;
+	background: #fff;
+	left: 0em;
+	top: -1.5em;
+	position: absolute;
+}
+
+@media only screen and (min-width: 760px) {
+	section.default-hero .background {
+		padding: 11.1em 0 0;
+	}
+
+	.defaultHero .rightInfo::before {
+		content: none;
+	}
+
+	.defaultHero > .wp-block-group > .wp-block-group__inner-container {
+		flex-direction: row;
+	}
+
+	.defaultHero .rightInfo {
+		padding-left: 2.5em;
+		padding-bottom: 2.75em;
+		margin-top: 0;
+		margin-bottom: 0;
+		border-left: 0.1em solid #fff;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.default-hero .wrap {
+		margin: 0 4.9em 0 5.05em;
+	}
+
+	.defaultHero .title .h2 {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	section.default-hero .background {
+		width: calc(100vw - 5.05em);
+	}
+}

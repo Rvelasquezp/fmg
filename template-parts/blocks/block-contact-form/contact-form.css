@@ -1,0 +1,73 @@
+section.contact-form .wrap {
+	margin: 0 0.944444444444444em;
+	padding: 0;
+	position: relative;
+}
+
+.allContactForm h2 {
+	font-size: 3em;
+	font-weight: 800;
+	color: #20255e;
+	margin-top: 0;
+	margin-bottom: 0.6666666666666667em;
+	line-height: 1;
+}
+
+.allContactForm p {
+	font-size: 1em;
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+.allContactForm input,
+.allContactForm textarea {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1.25em;
+	border-radius: 1.5em;
+	background: #f0f2f5;
+	border: none;
+	outline: none;
+	font-size: 0.9em;
+	padding: 1.0921em 2.055555555555556em;
+}
+
+.allContactForm textarea {
+	height: 14.38888888888889em;
+}
+
+.allContactForm input[type="submit"] {
+	max-width: 14.05555555555556em;
+	background: #20255e;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+section.contact-form {
+	padding: 2em 0 5em;
+}
+
+.contactForm {
+	margin-top: 2.5em;
+}
+
+@media only screen and (min-width: 960px) {
+	section.contact-form .wrap {
+		margin-left: 7.9em;
+		margin-right: 7.65em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section.contact-form .wrap {
+		margin-left: 11.9em;
+		margin-right: 19.6em;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	section.contact-form .wrap {
+		margin-left: 11.9em;
+		margin-right: 25.6em;
+	}
+}

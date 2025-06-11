@@ -1,0 +1,40 @@
+.m-dropdown {
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	background: #ffffff;
+	color: #464646;
+	text-align: left;
+	padding: 1.067em 2.222222222222222em;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	font-size: 0.9em;
+	border-radius: 1.666666666666667em;
+	border: none;
+	-webkit-appearance: none;
+}
+
+.m-dropdown::-ms-expand {
+	display: none;
+}
+
+.m-dropdown:focus {
+	outline: none;
+}
+
+.montgolfieres-filter {
+	position: relative;
+}
+
+.montgolfieres-filter::after {
+	/*     content: "\f063"; */
+	font-family: "Font Awesome 6 Pro";
+	font-weight: bold;
+	position: absolute;
+	margin-left: 1em;
+	display: inline-block;
+	color: #f0c3dc;
+	transition: 0.2s all ease-in-out;
+	top: 1.067em;
+	right: 1.8em;
+}

@@ -1,0 +1,184 @@
+section.filter-activities .wrap {
+	margin-left: 0.944444444444444em;
+	margin-right: 0.944444444444444em;
+	padding: 0;
+}
+
+/* section.filter-activities {
+	padding: 3.35em 0 0;
+} */
+
+.galleryActivities {
+	/* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+	/* gap: 2.25em; */
+	padding-top: 1.85em;
+	text-align: center;
+	color: #fff;
+}
+
+.galleryActivities .imageContent {
+	position: relative;
+	display: grid;
+}
+
+.galleryActivities .imageContent img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+}
+
+.galleryActivities .imageContent .content h3 {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	line-height: 1;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	/* 	text-transform: uppercase; */
+}
+
+.galleryActivities .imageContent .content {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	transition: all 0.4s ease-in-out;
+	background: rgb(240 195 220 / 90%);
+	padding: 12px;
+	min-height: 72px;
+	display: grid;
+	align-items: center;
+}
+
+.galleryActivities .imageContent:hover .content {
+	background: #fff;
+}
+
+.galleryActivities .imageContent:hover .content h3,
+.galleryActivities .imageContent:hover .content .smalle {
+	color: #20255e;
+}
+
+.galleryActivities .imageContent:hover .content .smalle span::before {
+	color: #20255e;
+}
+
+.galleryActivities .imageContent .content h3,
+.galleryActivities .imageContent .content .smalle,
+.galleryActivities .imageContent .content .smalle span::before {
+	transition: 0.3s all ease-in-out;
+}
+
+.galleryActivities .imageContent .image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 100%;
+}
+
+.filterActivities {
+	background-color: #20255e;
+	padding: 1.95em 1.25em 2.5em;
+}
+
+.filterActivities .filter {
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+	column-gap: 1.4em;
+	row-gap: 1em;
+	padding-top: 1.95em;
+	margin-bottom: 1.85em;
+}
+
+.filterActivities .filter .eachFilter select {
+	font-size: 0.9em;
+	padding: 0.963em 2.444444444444444em;
+	border-radius: 1.666666666666667em;
+	width: 21.72222222222222em;
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+	position: relative;
+	border: none;
+	box-sizing: border-box;
+}
+
+.filterActivities .filter .eachFilter i {
+	position: absolute;
+	right: 1.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #20255e;
+	font-weight: 400;
+	pointer-events: none;
+}
+
+.filterActivities .filter .eachFilter {
+	position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+	.galleryActivities .imageContent .content a {
+		padding: 1.0561em 2.775em;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.galleryActivities .imageContent {
+		margin-bottom: 1.5em;
+	}
+
+	.filterActivities .filter .eachFilter,
+	.filterActivities .filter .eachFilter select {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.galleryActivities {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.filter-activities .wrap {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+
+	.galleryActivities {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2.25em;
+	}
+
+	.filterActivities {
+		padding: 1.95em 2.25em 2.5em;
+	}
+
+	.filterActivities .filter {
+		column-gap: 2.4em;
+		padding-top: 1.95em;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.filterActivities .filter {
+		column-gap: 4.4em;
+	}
+}

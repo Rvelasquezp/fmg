@@ -1,0 +1,60 @@
+section.contact-info .wrap {
+	margin-left: 5.208333333333333%;
+	margin-right: 5.208333333333333%;
+	padding: 0;
+}
+
+.contactInfo h2 {
+	font-size: 3em;
+	font-weight: 800;
+	color: #f0c3dc;
+	line-height: 1;
+	margin-top: 0;
+	margin-bottom: 0.6666666666666667em;
+}
+
+.contactInfo p {
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.contactInfo p strong {
+	color: #f0c3dc;
+}
+
+section.contact-info {
+	position: relative;
+	padding: 5em 0 4.45em 0;
+}
+
+section.contact-info .contactCloud svg {
+	position: absolute;
+	right: 0;
+	/* bottom: 0; */
+	z-index: 1;
+	width: 22.95em;
+	display: none;
+}
+
+section.contact-info .contactBallon svg {
+	position: absolute;
+	right: 2em;
+	/* bottom: -5.5em; */
+	width: 15.6em;
+	display: none;
+}
+
+@media only screen and (min-width: 760px) {
+	section.contact-info .contactBallon svg,
+	section.contact-info .contactCloud svg {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.contact-info .wrap {
+		margin-left: 12.34375%;
+		margin-right: 24.47916666666667%;
+	}
+}

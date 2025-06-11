@@ -1,0 +1,151 @@
+section.slider-about-activities .wrap {
+	margin-left: 5.208333333333333%;
+	margin-right: 5.208333333333333%;
+	padding: 0;
+	position: relative;
+}
+
+.sliderAboutActivities {
+	overflow: hidden;
+	margin-left: 0;
+	max-width: 45.25em;
+}
+
+.slider-about-activities .contentSliderActivities {
+	margin: 2em 0;
+}
+
+.contentSliderActivities h2 {
+	font-size: 3em;
+	font-weight: 800;
+	color: #f0c3dc;
+	line-height: 1;
+	margin: 0 0 0.5em;
+}
+
+.contentSliderActivities p {
+	font-size: 1em;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+.contentSliderActivities a {
+	font-size: 0.9em;
+	text-decoration: none;
+	background: #f0c3dc;
+	color: #fff;
+	padding: 1.111111111111111em 3.611111111111111em;
+	border-radius: 1.666666666666667em;
+}
+
+.contentSliderActivities .button {
+	margin-top: 3.111111em;
+}
+
+section.slider-about-activities {
+	position: relative;
+	padding: 3.5em 0;
+}
+
+.sliderAboutActivities .swiper-button-next:after,
+.sliderAboutActivities .swiper-button-prev:after {
+	content: none !important;
+}
+
+.sliderAboutActivities .swiper-button-next,
+.sliderAboutActivities .swiper-button-prev {
+	font-size: 2.96em;
+	display: none;
+}
+
+.sliderAboutActivities .swiper-button-prev {
+	left: auto !important;
+	right: 1.5em !important;
+	bottom: 0 !important;
+	margin-top: auto !important;
+}
+
+.sliderAboutActivities .swiper-button-next {
+	right: 0 !important;
+	bottom: 0 !important;
+	margin-top: auto !important;
+}
+
+.sliderAboutActivities .swiper-button-next i::before,
+.sliderAboutActivities .swiper-button-prev i::before {
+	color: #f0c3dc;
+	font-weight: 300;
+}
+
+section.slider-about-activities .bigBallon svg {
+	width: 11.65em;
+	position: absolute;
+	top: -7.75em;
+	left: 0;
+	display: none;
+}
+
+section.slider-about-activities .mediumBallon svg {
+	width: 6.3em;
+	position: absolute;
+	top: 15em;
+	left: 6.5em;
+	display: none;
+}
+
+section.slider-about-activities .smallBallon svg {
+	width: 3.65em;
+	position: absolute;
+	top: 13.75em;
+	left: 10em;
+	display: none;
+}
+
+section.slider-about-activities .cloudTop svg {
+	width: 26em;
+	position: absolute;
+	top: -12.9em;
+	left: 0;
+	z-index: -1;
+	display: none;
+}
+
+section.slider-about-activities .cloudBottom svg {
+	width: 18.2em;
+	position: absolute;
+	top: 0;
+	left: -5em;
+	display: none;
+}
+
+@media only screen and (min-width: 760px) {
+	.sliderAboutActivities .swiper-button-next,
+	.sliderAboutActivities .swiper-button-prev {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.slider-about-activities .wrap {
+		margin-left: 5.208333333333333%;
+		margin-right: 10.41666666666667%;
+	}
+
+	.sliderAboutActivities {
+		margin-left: 15.5em;
+	}
+
+	section.slider-about-activities .bigBallon svg,
+	section.slider-about-activities .mediumBallon svg,
+	section.slider-about-activities .smallBallon svg,
+	section.slider-about-activities .cloudTop svg,
+	section.slider-about-activities .cloudBottom svg {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.sliderAboutActivities {
+		margin-left: 20.5em;
+	}
+}

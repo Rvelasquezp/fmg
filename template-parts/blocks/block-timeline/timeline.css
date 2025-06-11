@@ -1,0 +1,197 @@
+section.timeline-slider {
+	padding: 0;
+	position: relative;
+	/* max-width: calc(100vw - 5.05em); */
+	margin-top: -3.5rem;
+}
+
+.timeline-slider-years {
+	max-width: 62.15em;
+}
+
+.timeline-slider-pagination {
+	padding: 1.4rem 30px 1.4rem 30px;
+	background-color: #f0c3dc;
+	width: fit-content;
+	border-top-right-radius: 2000px;
+	border-bottom-right-radius: 2000px;
+	display: block;
+	max-width: 87.2457394172622%;
+	z-index: 2;
+	/* transform: translateX(-85%); */
+	transition: all 0.3s ease-in-out;
+	position: relative;
+}
+
+button.timeline-slider-nav-next {
+	position: absolute;
+	right: 0.4rem;
+	top: 0;
+	bottom: 0;
+	height: fit-content;
+	margin: auto 0;
+	background: transparent;
+	border: none;
+	color: #fff;
+	padding: 0;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.timeline-slider-years.swiper-pagination-clickable {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 4.15rem;
+}
+
+button.timeline-slider-nav-next:hover svg {
+	background-color: #fff;
+}
+
+button.timeline-slider-nav-next:hover svg .d {
+	fill: #f0c3dc;
+}
+
+button.timeline-slider-nav-next svg .d {
+	transition: 0.2s all ease-in-out;
+}
+
+button.timeline-slider-nav-next svg {
+	width: 3.05em;
+	height: 3.05em;
+	background-color: transparent;
+	transition: 0.2s all ease-in-out;
+	border-radius: 50%;
+}
+
+.timeline-slider-years button {
+	font-weight: 900;
+	/* margin: 0 !important; */
+	opacity: 1;
+	background: none;
+	/* line-height: 0.6; */
+	/* height: fit-content; */
+	/* width: fit-content; */
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
+	border: none;
+}
+
+/* .timeline-slider-years .swiper-slide-thumb-active button {
+	font-size: 2rem;
+} */
+
+.timeline-slide {
+	background-color: #20255e;
+	color: #fff;
+	padding: 7.5rem 1.6rem 4.25rem;
+}
+
+.timeline-slider-holder .swiper-wrapper {
+	background-color: #f0c3dc;
+}
+
+.timeline-slider-years .swiper-wrapper {
+	align-items: center;
+}
+
+.timeline-slider-years button {
+	font-size: 3rem;
+	padding: 0 0;
+	transform: scale(0.5);
+}
+
+.timeline-slider-years .swiper-slide-active button {
+	/* font-size: 4rem; */
+	transform: scale(1);
+}
+
+.timeline-slider-holder {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+	.timeline-slider-pagination {
+		margin: 0 auto;
+		border-radius: 2000px;
+		padding-left: 8em;
+		margin-bottom: -2.8em;
+	}
+
+	button.timeline-slider-nav-next {
+		right: unset;
+		left: 3em;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	section.timeline-slider {
+		max-width: calc(100vw - 5.05em);
+	}
+
+	.timeline-slider-years button {
+		font-size: 3rem;
+		padding: 1.57rem 0;
+	}
+
+	.timeline-slide {
+		padding: 7.5rem 3.6rem 4.25rem;
+	}
+
+	.timeline-slider-pagination {
+		padding: 0 6.05rem 0 11.85rem;
+		position: relative;
+		border-top-right-radius: 2000px;
+		border-bottom-right-radius: 2000px;
+		margin-bottom: -4.2rem;
+		transform: none;
+		/* min-height: 7.2em; */
+	}
+
+	.timeline-slider-pagination .swiper-slide {
+		width: auto;
+	}
+
+	button.timeline-slider-nav-next {
+		position: absolute;
+		left: 5.15rem;
+		top: 0;
+		bottom: 0;
+		height: fit-content;
+		margin: auto 0;
+		display: grid;
+		right: unset;
+	}
+	.timeline-slide {
+		padding: 7.5rem 4.6rem 4.25rem;
+	}
+
+	.timeline-slider-years.swiper-pagination-clickable {
+		gap: 4.15rem;
+		flex-direction: row;
+	}
+	.timeline-slide {
+		padding: 7.5rem 7.6rem 4.25rem;
+	}
+	.timelineWrap.wrap {
+		margin: 0 5em;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.timeline-slider-years button {
+		font-size: 3.5rem;
+		transform: scale(0.375);
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	.timeline-slider-years button {
+		font-size: 4rem;
+	}
+}

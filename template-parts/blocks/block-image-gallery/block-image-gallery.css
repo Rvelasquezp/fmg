@@ -1,0 +1,74 @@
+/* .image-gallery {
+    margin-bottom: 5em;
+} */
+
+.image-gallery figcaption {
+    display: none;
+}
+
+.image-gallery .gallery-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 1.5em;
+    grid-auto-rows: 13.65em;
+}
+
+.image-gallery .wp-block-image {
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.image-gallery .wp-block-image img {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-gallery .wp-block-image:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        width: 100%;
+        margin: .5em 0;
+    }
+
+    
+
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+
+    .image-gallery .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-gallery .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        margin-bottom: .5em;
+        margin-right: 0;
+        width: 45%;
+    }
+
+    .image-gallery .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):nth-of-type(3n+3) {
+        margin-right: .5em;
+    }
+    
+    .image-gallery .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image):nth-child(odd) {
+        margin-right: .5em;
+    }
+
+    
+
+}
+
+@media (min-width: 960px) {
+
+    .image-gallery .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 17.65em;
+    }
+}

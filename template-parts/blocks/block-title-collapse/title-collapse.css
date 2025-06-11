@@ -1,0 +1,36 @@
+section.title-collapse .wrap {
+	margin: 0 0.944444444444444em;
+	padding: 0;
+}
+
+section.title-collapse .titleCollapse {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+}
+
+section.title-collapse .titleCollapse h2 {
+	margin: 0;
+	font-size: 3em;
+}
+
+section.title-collapse {
+	background: #f0f2f5;
+	padding: 5em 0 14.55em;
+}
+
+section.title-collapse + section {
+	margin-top: -10.8em;
+}
+
+@media only screen and (min-width: 760px) {
+	section.title-collapse .titleCollapse {
+		grid-template-columns: 1fr auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	section.title-collapse .wrap {
+		margin: 0 8.6em 0 11.85em;
+	}
+}

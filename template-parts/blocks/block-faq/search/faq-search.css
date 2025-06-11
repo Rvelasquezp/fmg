@@ -1,0 +1,78 @@
+section.faq-search .wrap {
+  margin-left: 5.208333333333333%;
+  margin-right: 5.208333333333333%;
+  padding: 0;
+}
+
+section.faq-search {
+  padding: 5em 0 3.6em;
+}
+
+.faqSearchSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.faqSearchSection .searchFaq input.myInput {
+  font-size: 0.9em;
+  padding: 0.963em 2.444444em;
+  border-radius: 1.666666666666667em;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.faqSearchSection .searchFaq {
+  position: relative;
+  width: 100%;
+}
+
+.faqSearchSection .searchFaq i {
+  position: absolute;
+  right: 2.444444444444444em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #115277;
+  font-weight: 400;
+}
+
+.faqSearchSection .selectFilter {
+  position: relative;
+  width: 100%;
+}
+
+.faqSearchSection .selectFilter select {
+  font-size: 0.9em;
+  padding: 0.963em 2.444444444444444em;
+  border-radius: 1.666666666666667em;
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+}
+
+.faqSearchSection .selectFilter i {
+  position: absolute;
+  right: 2.444444444444444em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #115277;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 760px) {
+  .faqSearchSection {
+    grid-template-columns: 65.70486397361913% auto;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  section.faq-search .wrap {
+    margin-left: 12.34375%;
+    margin-right: 24.47916666666667%;
+  }
+}

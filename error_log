@@ -1,0 +1,16 @@
+[05-Sep-2024 07:45:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php on line 16
+[05-Sep-2024 07:46:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php on line 16
+[05-Sep-2024 07:46:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php on line 16
+[10-May-2025 23:51:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/montgolfieres/public_html/wp-content/themes/utopian/index.php on line 16

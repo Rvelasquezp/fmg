@@ -1,0 +1,47 @@
+.content .contentInfo .time,
+.contentInfo .location {
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox; /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.contentInfo .location i {
+	font-weight: 600;
+	font-size: 1.4em;
+	width: 34px;
+}
+
+.content .contentInfo h3 {
+	font-weight: 800;
+	color: #f0c3dc;
+	margin: 0;
+	line-height: 1;
+}
+
+.contentInfo h3 span {
+	color: #fff;
+	font-weight: 400;
+}
+
+@media only screen and (min-width: 760px) {
+	.single-activity-content .content .contentInfo h3 {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.content .contentInfo .time,
+	.contentInfo .location {
+		gap: 2.55em;
+	}
+	/* .contentInfo .time,
+    .contentInfo .location {
+		gap: 4.55em;
+	} */
+}
