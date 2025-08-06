@@ -29,48 +29,48 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts() && !get_field('hide')) {
 
 ?>
-    <section class="<?php echo join(' ', $classes); ?>" <?php echo $anchor; ?>>
-		<div class="wrap" style="background-color: #20255e;">
-			<section class="montgolfieres-filter">
-				
-				<div style="position: relative;">
-					
-					<select name="montgolfiere_cat" id="montgolfiere_cat" class="m-dropdown">
+<section class="<?php echo join(' ', $classes); ?>" <?php echo $anchor; ?>>
+    <div class="wrap" style="background-color: #20255e;">
+        <section class="montgolfieres-filter">
 
-						<option value="" selected="">
-							<?php echo __('Tous les styles', 'utopian'); ?>
-						</option>
-						<?php foreach ($cats as $cat) { ?>
-						<option value="<?php echo $cat->term_id ?>"><?php echo $cat->name ?></option>
-						<?php } ?>
+            <div class="container_dropdown" style="position: relative;">
 
-					</select>
+                <select name="montgolfiere_cat" id="montgolfiere_cat" class="m-dropdown">
 
-				</div>
+                    <option value="" selected="">
+                        <?php echo __('Tous les styles', 'utopian'); ?>
+                    </option>
+                    <?php foreach ($cats as $cat) { ?>
+                    <option value="<?php echo $cat->term_id ?>"><?php echo $cat->name ?></option>
+                    <?php } ?>
 
-			</section>
-			<div id="lightgallery" class="items-wrapper">
-				<?php
+                </select>
+
+            </div>
+
+        </section>
+        <div id="lightgallery" class="items-wrapper">
+            <?php
 				while ($the_query->have_posts()) {
 					$the_query->the_post();
 				?>
-					<a href="<?php echo get_the_post_thumbnail_url(); ?>" class="gallery-item">
-						<div class="montgolfiereImage">
-							<?php echo get_the_post_thumbnail(); ?>
-							<div class="item-title">
-								<p><?php echo get_the_title(); ?></p>
-							</div>
-						</div>
-						<div class="item-description">
-							<p class="title"><?php echo get_the_title(); ?></p>
-							<p class="name"><?php echo get_field('name', get_the_ID()); ?></p>
-							<p class="location"><?php echo get_field('location', get_the_ID()); ?></p>
-						</div>
-					</a>
-				<?php } ?>
-			</div>
-		</div>
-	</section>
+            <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="gallery-item">
+                <div class="montgolfiereImage">
+                    <?php echo get_the_post_thumbnail(); ?>
+                    <div class="item-title">
+                        <p><?php echo get_the_title(); ?></p>
+                    </div>
+                </div>
+                <div class="item-description">
+                    <p class="title"><?php echo get_the_title(); ?></p>
+                    <p class="name"><?php echo get_field('name', get_the_ID()); ?></p>
+                    <p class="location"><?php echo get_field('location', get_the_ID()); ?></p>
+                </div>
+            </a>
+            <?php } ?>
+        </div>
+    </div>
+</section>
 
 <?php
 }

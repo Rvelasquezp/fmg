@@ -29,6 +29,23 @@ section.gallery-container .montgolfieres-filter > div::after {
 	transform: translateY(-50%);
 }
 
+/* section.gallery-container .montgolfieres-filter .container_dropdown {
+	font-size: 0.9em;
+	width: 100%;
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+section.gallery-container .montgolfieres-filter .container_dropdown select {
+	-webkit-appearance: none;
+	padding: 0.963em 2.444444444444444em;
+	width: 100%;
+	border-radius: 1.666666666666667em;
+	outline: none;
+} */
+
 .gallery-container .item-description .title {
 	display: none;
 }
